@@ -1,0 +1,143 @@
+a>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: lightgreen;
+    height: 25px;
+}
+.goods-nav-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #008000;
+    height: 50px;
+    color: white;
+}
+.goods-nav>a>span{
+    padding: 25px;
+    font-weight: 600;
+    font-size: 15pt;
+    color: white;
+}
+.goods-nav>a>span:hover{
+    color: darkorange;
+}
+.catalog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.good{
+    min-height: 500px;
+    max-width: 300px;
+    margin: 10px;
+/*    border: 2px solid white;*/
+/*    background-color: gray;*/
+    text-align: center;
+    background-repeat: no-repeat;
+/*    overflow: hidden;*/
+    box-shadow: 0 0 10px 
+}
+.good-price{
+    margin-bottom: 15px;
+}
+.good-price::after{
+    content: '\20BD';
+}
+.add-to-cart::after{
+    content: '\1F6D2';
+}
+.add-to-cart{
+    color: black; 
+    text-decoration: none; 
+    user-select: none; 
+    border: 1px solid black;
+    padding: 4px;
+}
+.add-to-cart:hover{
+    color: #008000;
+}
+.good-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.add-cart{
+    border: 1px solid black;
+    max-width: 100px;
+    padding: 5px;
+}
+.add-cart::after{
+    content: '\1F6D2';
+}
+.goods-nav-header>div>span>a{
+    color: white;
+}
+.openModal {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+}
+.openModal:target {
+	display: block;
+	pointer-events: auto;
+}
+
+.openModal > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { 
+    background: #00d9ff;
+}
+.specifications{
+    display: table;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+.table-head{
+    display: table-row;
+    font-weight: bold;
+}
+.table-info{
+    display: table-cell;
+    width: 65%;
+}
+.table-info, .table-info-r{
+    display: table-cell;
+/*    width: 25%;*/
+}
+.table-info>div, .table-info-r>div{
+/*    display: table-row;*/
+    border: 1px solid black;
+    padding: 10px;
+}

@@ -1,0 +1,36 @@
+main{
+	font-size: 23pt;
+	color: #008000;
+    margin: 10px;
+}
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+/*    grid-template-columns: 1fr 1fr 1fr 1fr;*/
+}
+.goods-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.goods-prew{
+    border: 1px solid green;
+    margin:5px;
+}
+.goods-name{
+	padding-top:5px;
+	padding-bottom: 5px;
+    background-color: #008000;
+    color: white;
+}
+
+.good-fieldset{
+	font-size: 14pt;
+	border-radius: 20px;
+	border: 2px solid #008000;
+	text-align: center;
+}
+.goods-prew:hover {
+	transition-duration: 0.25s;
+}
+

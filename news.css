@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+.news-container{
+    border: 1px solid green;
+    border-radius: 12px;
+    max-width: 700px;
+/*    padding: 2px;*/
+}
+.news-header{
+    height: 25px;
+    background-color: green;
+    border-radius: 10px 10px 0 0 ;
+}
+.separation{
+    grid-column: 1/3;
+    height: 25px;
+    background-color: green;
+}
+.article-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.article-txt{
+    border-top: 1ps solid green;
+    border-bottom: 1px solid green;
+}

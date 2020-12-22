@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация и вход</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <script language="javascript">
+            $(function($) {
+               $('input[name="phone"]').mask("+7 (999) 999-99-99");
+            });
+        </script>
+        <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('body').on('click', '.viewPas', function(){
+	if ($(this).is(':checked')){
+		$('#password').attr('type', 'text');
+	} else {
+		$('#password').attr('type', 'password');
+	}
+}); 
+    
+</script>
+<script>
+$('body').on('click', '.viewPas', function(){
+	if ($(this).is(':checked')){
+		$('#singUp-pas-ag').attr('type', 'text');
+	} else {
+		$('#singUp-pas-ag').attr('type', 'password');
+	}
+}); 
+</script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><div class="logo">
+            <div class="site-name"><img src="img/logo.png" width="90" height="50" alt=""> <b>Golf-Club</b> </div>
+            </div> </a>
+       <div class="main-menu-container">
+            <a href="index.html"><span>Главная</span></a>
+            <a href="About.html"><span>О нас</span> </a>
+            <a href="shop.html"><span>Товары и услуги</span></a>
+            <a><span>Галерея</span></a>
+            <a><span>Контакты</span></a>
+            <a href="news.html"><span>Новости</span></a>
+            <a href="account.html"><span class = "current-location">Личный кабинет</span></a>
+        </div>
+    </header>
+    <div class="registration-container container">
+        <div class="singUp">
+            <h2>Создать аккаунт</h2>
+            <form action="" class="signUp-form">
+               
+                <label for="singUp-name">Имя</label> <br>
+                <input type="text" required="" id="singUp-name" class="name"> <br>
+                
+                <label for="singUp-surname">Фамилия</label><br>
+                <input type="text" required="" class="surname" id="singUp-surname"> <br>
+                
+                <label for="singUp-tel">Номер телефона</label><br>    
+                <input name="phone" type="tel" required="" class="singUp-tel" id="singUp-tel" placeholder="+7 (___)___-__-__" maxlength="10"> <br>
+                
+                <label for="singUp-email">Введите адрес электронной почты</label><br>
+                <input type="email" required="" class="singUp-email" id="singUp-email" placeholder="example@example.com"><br>
+                
+                <label for="password">Пароль</label><br>
+                <input type="password" required="" placeholder="Введите пароль" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{15,}" maxlength="15" title="Поле должно содержать не менее одной цифры, одной прописной и строчной буквы, а также не менее 15 символов"> <br>
+                
+                <label for="singUp-pass-ag">Повторите пароль</label> <br>
+                <input type="password" required="" class="singUp-pass-ag" id="singUp-pas-ag" placeholder="Повторите пароль"> <br>
+                
+                <label for="check-box">Получать уведовления</label>
+                <input type="checkbox" class="checkbox" id="check-box" checked=""> <br>
+                
+                <label for="viewPas">Показать пароль</label>
+                <input type="checkbox" id="viewPas"> <br>
+                
+                <input type="submit" value="Регистрация" class="singUp-btn" id="singUp-btn">
+                
+            </form>
+            </div>
+            <div class="singIn-container">
+                <h2>Вход</h2>
+                <form action="">
+                    <label for="singIn-email">Введите адрес электронной почты</label> <br>
+                    <input type="email" required class="singIn-email" id="singIn-email" placeholder="example@example.com"><br>
+                    
+                    <label for="singIn-pas">Введите пароль</label><br>
+                    <input type="password" required placeholder="Введите пароль" class="singIn-pas" id="singIn-pas"><br>
+                    
+                    <input type="submit" value="Войти" class="singIn-btn" id="singIn-btn">
+                </form>
+            </div>
+        
+    </div>
+    <footer>
+        <ul class = "footer-ul">
+            <li class = "top-li"> <a class = "top-a">Контакты:</a><ul class = "footer-ul">
+                    <li> Тел: +88005553535</li>
+                    <li> <a href ="https://vk.com/e_e_r_2002" class ="footer-1"><img src="img/vk.png" width="20" height="17" alt=""> ВКонтакте</a></li>
+                    <li> <a href ="https://twitter.com/Ponasenkov" class ="footer-2"><img src="img/twitter.png" width="20" height="17" alt="">       Twitter</a></li>
+                    <li> <a href ="https://www.instagram.com/evgenii_ponasenkov/" class ="footer-3"><img src="img/instagram.png" width="20" height="20" alt=""> Instagram</a> </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class = "footer-ul">
+            <li class = "top-li"><a class ="top-a"> Авторы проекта:</a> 
+                <ul class = "footer-ul">
+                <li>Евгений Ершов</li>
+                <li>Максим Клыпин</li>
+                </ul>
+            </li> 
+        </ul>
+    </footer>
+</body>
+</html>
